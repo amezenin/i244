@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
   <link rel="stylesheet" type="text/css" href="style.css"  />
@@ -19,5 +19,25 @@
     <img src="http://enos.itcollege.ee/~amezenin/pictures/acistus.jpg" alt="Kala"/>
     <img src="//enos.itcollege.ee/~amezenin/pictures/acistus2.jpg" alt="Kala"/>
     <img src="/~amezenin/pictures/acistus2.jpg" alt="Kala"/>
+	
+<?php
+  $host = "localhost";
+    $user = "test";
+    $pass = "t3st3r123";
+    $db = "test";
+
+    $l = mysqli_connect($host, $user, $pass, $db);
+    mysqli_query($l, "SET CHARACTER SET UTF8") or
+            die("Error, ei saa andmebaasi charsetti seatud");
+			
+			
+   
+    mysqli_close($l);
+	
+
+ echo phpversion();
+
+?>
+
   </body>
 </html>
