@@ -30,7 +30,10 @@
     mysqli_query($l, "SET CHARACTER SET UTF8") or
             die("Error, ei saa andmebaasi charsetti seatud");
 			
-			
+
+$result = mysql_query($l, "SELECT * FROM 10162983_amezenin");
+
+
    
     mysqli_close($l);
 	
