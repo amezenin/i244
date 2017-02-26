@@ -1,0 +1,38 @@
+.p1 {
+	color: green;
+}
+
+.p2 {
+	text-decoration: underline;
+}
+
+.p3 {
+	background-color: #006400;
+}
+
+.p4 {
+	font-size:200%;
+}
+
+.p5 {
+	font-family: monospace;
+}
+
+.p6 {
+	border: 3px solid #000000;
+	background-color: yellow;
+}
+
+.p7 {
+	border: 3px dotted #000000;
+	border-radius: 6px;
+}
+
+.p8 {
+	font-style: italic;
+	text-align: center;
+}
+
+.p9 {
+	cursor: crosshair;
+}

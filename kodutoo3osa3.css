@@ -1,0 +1,84 @@
+body {
+	background-color: #8FBC8F;
+}
+
+.menu a {
+			color: blue;
+			font-family: Arial;
+			text-decoration: none;
+		}
+		
+		.menu a:hover {
+			text-decoration: underline;
+		}
+		
+		.menu {
+			list-style-type: armenian;
+			padding: 10px 0px;
+			margin-left: 30px;
+		}
+		
+		.menu li{
+			width: 150px;
+			padding: 5px;
+			float: left;
+			background: #AAAAAA;
+			width: 7em; 
+			margin-left:30px;
+		}
+		
+		.menu li:hover {
+			background: red;
+		}
+		
+		h1 {
+			font-family: Arial;
+			text-decoration: underline;
+		}
+		
+		h2 {
+			text-decoration: line-through;
+		}
+		
+		.kot {
+			background-color: blue;
+			border: 3px dotted black;
+			border-radius: 8px;
+			width: 200px;
+			margin-left:150px;
+			padding-right:50px;
+			margin-top:50px;
+		}
+		
+		.kot:hover {
+			background-color: white;
+			border: 3px solid red;
+			
+		}
+		
+		.pilt1 {
+			image-rendering: optimizeSpeed;
+			width:200px;
+
+			
+		}
+		
+		.pilt1:hover {
+			image-rendering: optimizeSpeed;
+			width:250px;
+
+			
+		}
+		
+		a.pilt2 {
+			background: url(pictures/acistus1.jpg);
+			display: block; 
+			width: 400px; 
+			height: 170px;
+		}
+		
+		a.pilt2:hover {
+			background: url(pictures/osetr.jpg);
+			width: 360px; 
+			height: 250px;
+		}

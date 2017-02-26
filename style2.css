@@ -1,0 +1,97 @@
+
+		body {
+			background-color: yellow;
+		}
+
+		.tekst1, .tekst2 {
+		width: 500px; text-align: justify; font-family: Arial, sans-serif; border: 1px solid green;
+		}
+		
+		h1 {
+			border-bottom: 2px solid green;
+			font-family: "Courier New", monospace;
+		}
+		
+		.tekst1 .esimene {
+			font-weight: bold;
+		}
+		
+		.tekst2 .esimene {
+			color: #AAAAAA;
+		}
+		
+		.menu .valitud {
+			background-color: blue;
+		
+		}
+		
+		.menu .valitud a{
+			color: white;
+		
+		}
+		
+		.menukast {
+			border: 1px solid green;
+			padding: 10px;
+		}
+		
+		.menu {
+			list-style-type: none;
+			padding: 10px 0px;
+			margin: 0px;
+		}
+		
+		.menu li{
+			width: 150px;
+			padding: 5px;
+			float: left;
+			background: #AAAAAA;
+			width: 7em; 
+		}
+		
+		.clear {
+			clear: both;
+		}
+		
+		.menu a {
+			color: blue;
+			font-family: Arial;
+			text-decoration: none;
+		}
+		
+		.menu a:hover {
+			text-decoration: underline;
+		}
+		
+		.tabel {
+			font-family: Arial, Sans-Serif;
+			border-spacing: 0px;
+			
+		}
+		
+		.tabel caption {
+			font-weight: bold;
+			font-size: 110%;
+			
+		}
+		
+		.tabel td, .tabel th {
+			border-top: 1px solid #AAAAAA;
+			padding: 5px;
+		}
+		
+		input[type="text"], input[type="password"]  {
+			font-family: Arial;
+			padding: 2px 10px;
+			font-size: 13px;
+			border-radius: 4px;
+			width: 10em;
+		}
+		
+		input[type="password"] {
+			border: 2px solid blue;
+		}
+		
+		input[type="text"] {
+			border: 2px solid red;
+		}
