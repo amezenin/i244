@@ -11,3 +11,7 @@ h1 {
 p {
     color: red;
 }
+
+.tree li {
+      cursor: pointer;
+    }

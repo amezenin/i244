@@ -35,23 +35,35 @@
 			padding: 10px;
 		}
 		
+		@media (min-width: 700px) {
+			.menu {
+				flex-direction:row;
+			}
+		}
+		
+		@media (max-width: 700px) {
+			.menu {
+				flex-direction:column;
+			}
+		}
+		
 		.menu {
 			list-style-type: none;
 			padding: 10px 0px;
 			margin: 0px;
-			display: flex;
+			display:flex;
+			
+			
 		}
 		
 		.menu li{
 			width: 150px;
-			padding: 5px;
+			padding: 5px 10px;
 			background: #AAAAAA;
 			width: 7em; 
+			
 		}
 		
-		.clear {
-			clear: both;
-		}
 		
 		.menu a {
 			color: blue;
@@ -94,4 +106,11 @@
 		
 		input[type="text"] {
 			border: 2px solid red;
+		}
+		
+		div.autor {
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+			
 		}

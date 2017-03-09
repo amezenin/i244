@@ -20,7 +20,46 @@
     <img src="//enos.itcollege.ee/~amezenin/pictures/acistus2.jpg" alt="Kala"/>
     <img src="/~amezenin/pictures/acistus2.jpg" alt="Kala"/>
 	
-<?php
+<ul class="tree" id="tree">
+    <li>Животные
+      <ul>
+        <li>Млекопитающие
+          <ul>
+            <li>Коровы</li>
+            <li>Ослы</li>
+            <li>Собаки</li>
+            <li>Тигры</li>
+          </ul>
+        </li>
+        <li>Другие
+          <ul>
+            <li>Змеи</li>
+            <li>Птицы</li>
+            <li>Ящерицы</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Рыбы
+      <ul>
+        <li>Аквариумные
+          <ul>
+            <li>Гуппи</li>
+            <li>Скалярии</li>
+          </ul>
+
+        </li>
+        <li>Морские
+          <ul>
+            <li>Морская форель</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+	
+	
+	<?php
   $host = "localhost";
     $user = "test";
     $pass = "t3st3r123";
@@ -31,7 +70,7 @@
             die("Error, ei saa andmebaasi charsetti seatud");
 			
 
-$result = mysql_query($l, "SELECT * FROM 10162983_amezenin");
+//$result = mysql_query($l, "SELECT * FROM 10162983_amezenin");
 
 
     
@@ -41,6 +80,8 @@ $result = mysql_query($l, "SELECT * FROM 10162983_amezenin");
  echo phpversion();
 
 ?>
+
+<script src="tree.js"></script>
 
   </body>
 </html>
