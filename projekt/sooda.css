@@ -1,0 +1,56 @@
+#b {
+		background-color: #FFFFFF;
+	}
+
+
+.proov{
+	padding-top:100px;
+	padding-left:100px;
+}
+
+
+.soodapohi{
+	margin-left:100px;
+	margin-bottom:20px;
+	margin-top:20px;
+	
+}
+
+ td{
+	padding-bottom:10px;
+	padding-right:10px;
+	
+	
+}
+
+
+ #bog {
+	
+	margin-left:100px;
+	margin-bottom:20px;
+}
+	
+ #bog th {
+	padding:5px;
+}
+
+ #bog td {
+	padding:5px;
+}
+
+ #bog tr:nth-child(2n) {
+    background: #f0f0f0; /* Цвет фона */
+   } 
+   
+.button {
+	padding:2px;
+}
+
+
+   
+   
+	
+	
+	
+	
+  

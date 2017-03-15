@@ -1,3 +1,8 @@
+#b {
+		background-color: #FFFFFF;
+	}
+
+
 .proov{
 	padding-top:100px;
 	padding-left:100px;
@@ -10,6 +15,7 @@
 	.inter {
 		padding-left:100px;
 		padding-top:25px;
+		background-color:#FFFFFF;
 		
 	}
 	
@@ -17,6 +23,8 @@
 		font-weight: bold;
 		list-style-type: none;
 	}
+	
+	
 	
 	
 	

@@ -54,5 +54,11 @@
 </form>
 </p>
 
+<p>
+ <form method="post" action="http://enos.itcollege.ee/~amezenin/i244/projekt/index.php" target="iframe2">
+ <input type="submit" value="Projekt" />
+</form>
+</p>
+
   </body>
 </html>
