@@ -1,6 +1,18 @@
 
 <?php
 
+		
+
+			$host = "127.0.0.1";
+			$user = "root";
+			$pass = "root";
+			$db = "test";
+		
+
+			$l = mysqli_connect($host, $user, $pass, $db);
+			mysqli_query($l, "SET CHARACTER SET UTF8") or
+					die("Error, ei saa andmebaasi charsetti seatud" );
+
 
 
 if ($_POST) {
@@ -27,13 +39,25 @@ if ($_POST['vichislit']){
             $a = $a + ($a*$b/$c)/100;
           }
           echo '<tr><td>' . ($i+1) .'  </td><td>  ' . $a . '</td><td>  ' . ($a * $b)/100 . '</td> <td>' . ($a*$b/$c)/100 .'</td></tr>';
+		  
+		  
+		 
+		  
+		  $sql = "REPLACE INTO sooda_andmed (sooda_id, sooda_paev, sooda_biomass, sooda_kogus, sooda_kasv) VALUES (" . ($i+1) . ", " . ($i+1) . ", " . $a . ", " . ($a * $b)/100 . ", " . ($a*$b/$c)/100 . ")";
+			if (mysqli_query($l, $sql)) {
+				echo " ";
+			} else {
+				echo "Error: " . $sql . "<br>" . mysqli_error($l);
+			}
         }
-        echo '</table>';
+         echo '</table>';
 
     }
+	
+
 }
 
-
+mysqli_close($l);
     
 
 ?>  
