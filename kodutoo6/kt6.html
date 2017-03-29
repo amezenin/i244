@@ -9,6 +9,30 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
+		$('#next').click(function(){
+			var cur = $('li.active').first();
+			if(cur.length > 0){
+				$('.active').removeClass('active');
+				if(cur.next().length > 0){
+					cur.next().addClass('active');
+					return;
+				}
+			}
+			$('li').first().addClass('active');
+		});
+		$('#prev').click(function(){
+			var cur = $('li.active').last();
+			if(cur.length > 0){
+				$('.active').removeClass('active');
+				if(cur.prev().length > 0){
+					cur.prev().addClass('active');
+					return;
+				}
+			}
+			$('li').last().addClass('active');
+		});
+	});
+		/*
 	$('li').first().addClass('active');
 	$('#next').click(function(){
 	if($('.active').is(':last-child')){
@@ -31,8 +55,8 @@
 		$('.active').next().removeClass('active');
 	}
 	});
-	
-});
+	*/
+
 	</script>
 </head>
 <body>
