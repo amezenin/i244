@@ -1,0 +1,29 @@
+body {
+    background-image: url(bg.jpg);
+	background-size: cover;
+}
+
+.nav {
+	width: auto;
+    height: 70px;
+    position: relative;
+	border: 1px solid gray;
+	bottom:0px;
+}
+
+.nava {
+	display: table;
+  margin: 0 auto;
+}
+
+.el {
+	width: 230px;
+    height: 70px;
+    
+	border: 1px solid gray;
+	float:left;
+}
+
+table {
+	border: 1px solid gray;
+}
