@@ -9,7 +9,7 @@ header('Content-Disposition: attachment; filename=data.csv');
 $output = fopen('php://output', 'w');
 
 // output the column headings
-fputcsv($output, array('Column 1', 'Column 2', 'Column 3', 'Column 4', 'Column 5' ), ';'); // default oli koma
+fputcsv($output, array('Index', 'Paev', 'Biomass', 'Sooda kogus', 'Planeeritud juurdekasv' ), ';'); // default oli koma
 
 // fetch the data
 //mysqli_connect('127.0.0.1', 'root', 'ghbdtn123');
