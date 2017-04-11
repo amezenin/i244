@@ -1,0 +1,9 @@
+<h3>Valiku tulemus</h3>
+
+	<?php
+	if (empty($_POST)) {
+		echo '<p>Valik tegemata!</p>';
+	} else {
+		echo "Pilt nr " . $_POST["pilt"] . " oli hea valik!";
+	}
+	?>
