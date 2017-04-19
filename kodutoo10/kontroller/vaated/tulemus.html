@@ -1,0 +1,28 @@
+
+
+
+<?php if (isset($_SESSION['vote_for'] )){ ?>
+		 <h3>Valida saab vaid korra! Kuid saate muuta oma valik. Vajutage "Tagasi valimiseks"</h3>
+		 <p>Algul valisid selle ilusa pildi: <br/>
+			 <img src="<?php echo $pildid[$_SESSION['vote_for']]['src'];?>" alt="valitud"/></p>
+			 
+<?php	} else{
+		$_SESSION['vote_for'] = $_POST['pilt'];?>
+		<p>Valisid selle ilusa pildi: <br/>
+			<img src="<?php echo $pildid[$_SESSION['vote_for']]['src'];?>" alt="valitud"/></p>
+<?php	} ?>
+<?php if ($_SESSION['vote_for'] = $_POST['pilt']){ ?>
+<form method="post" action="?page=tulemus">
+
+	<input type="submit" name="delete" value="Muuta oma valik">	
+</form>
+<?php	} ?>
+
+<?php if (isset($_POST['delete'] )){
+		$_SESSION = array(); 
+	
+		echo '<a href="?page=vote">Tagasi valimiseks</a>';
+		} ?>
+	 
+	 
+	  
