@@ -44,10 +44,13 @@ function logi(){
 				$p = mysqli_real_escape_string($connection, $_POST["pass"]);
 				$sql = "SELECT id, role from mezenin_kylastajad WHERE username = '$u' AND passw = SHA1('$p')";
 				$result = mysqli_query($connection, $sql);
+				$query3 = "UPDATE mezenin_kylastajad SET visits = visits + 1 WHERE username = '$u';";
+				$result3 = mysqli_query($connection, $query3) or die("$query3 - ".mysqli_error($connection));
 				if (mysqli_num_rows($result)) {
 					$_SESSION["user"] = $_POST["user"];
 					$_SESSION["role"] = mysqli_fetch_assoc($result)["role"];
 					header("Location: ?page=loomad");
+				
 				} else {
 					$errors[] = "Vale kasutajanimi või parool";
 				}
